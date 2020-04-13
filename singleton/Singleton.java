@@ -5,7 +5,7 @@ public class Singleton {
     private Singleton() {}
 
     public static Singleton getInstance() {
-        if(singleton == null)
+        if(singleton == null) // lazy init
             singleton = new Singleton();
         return singleton;
     }
